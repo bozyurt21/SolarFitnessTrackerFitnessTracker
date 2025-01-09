@@ -1,0 +1,58 @@
+:root {
+    --mainColor: #31511E;
+    --secondaryColor: #859F3D;
+    --thirdColor: #F6FCDF;
+    --black: #000000;
+    --textBlack: #1A1A19
+}
+* {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.navbar{
+    background-color: var(--thirdColor);
+    gap: 0.9rem;
+}
+.container-fluid {
+    color: var(--black);
+    font-weight: 300;
+    
+}
+.info {
+    background-color: var(--secondaryColor);
+    margin: 2rem;
+    
+}
+.header {
+    text-align: center;
+    color:var(--thirdColor);
+    font-size: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.info-des {
+    color: var(--textBlack);
+    margin-left: 10rem;
+    margin-right: 10rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-weight: 100;
+}
+.navbar-nav {
+    gap: 0.9rem;
+    color: #000000;
+}
+.navbar-brand {
+    color: var(--mainColor);
+    
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.navbar-brand:hover {
+    cursor: pointer;
+}
+
+body {
+    background-color: var(--mainColor);
+}
