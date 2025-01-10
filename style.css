@@ -3,49 +3,39 @@
     --secondaryColor: #859F3D;
     --thirdColor: #F6FCDF;
     --black: #000000;
-    --textBlack: #1A1A19
+    --textBlack: #1A1A19;
 }
+
 * {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+                 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.navbar{
+
+body {
+    background-color: var(--mainColor);
+}
+
+/* Navigation Bar */
+.navbar {
     background-color: var(--thirdColor);
     gap: 0.9rem;
 }
+
 .container-fluid {
     color: var(--black);
     font-weight: 300;
-    
-}
-.info {
-    background-color: var(--secondaryColor);
-    margin: 2rem;
-    
-}
-.header {
-    text-align: center;
-    color:var(--thirdColor);
-    font-size: 2rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
 }
 
-
-.info-des {
-    color: var(--textBlack);
-    margin-left: 10rem;
-    margin-right: 10rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    font-weight: 100;
-}
 .navbar-nav {
     gap: 0.9rem;
     color: #000000;
 }
+
 .navbar-brand {
     color: var(--mainColor);
-    
     font-size: 1.5rem;
     font-weight: 500;
 }
@@ -54,6 +44,131 @@
     cursor: pointer;
 }
 
-body {
-    background-color: var(--mainColor);
+/* Main Content */
+.info {
+    background-color: var(--secondaryColor);
+    margin: 5% auto;
+    padding: 2rem;
+    width: 90%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.header {
+    text-align: center;
+    color: var(--thirdColor);
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+/* Text content */
+.info-des {
+    color: var(--textBlack);
+    margin: 0 auto;
+    max-width: 80%;
+    font-weight: 100;
+    font-size: 1.1rem;
+}
+
+/* Team Section */
+.team-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.info-mem {
+    padding: 2rem;
+    margin: 1rem;
+    background-color: var(--secondaryColor);
+    gap: 1rem;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.info-name {
+    color: var(--thirdColor);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+/* Video */
+.video-container {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.demoVideo {
+    max-width: 90%;
+    height: auto;
+}
+
+/* Footer */
+.end {
+    text-align: center;
+    color: var(--thirdColor);
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 2rem;
+    margin: 0 20%;
+}
+
+/* Reference Page */
+.reference {
+    color: var(--thirdColor);
+    max-width: 90%;
+    margin: 5% auto;
+}
+
+.reference ul {
+    padding: 0;
+}
+
+.reference ul li {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .header {
+        font-size: 1.5rem;
+    }
+
+    .info-des {
+        font-size: 1rem;
+        max-width: 95%;
+    }
+
+    .team-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-mem {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+
+    .info-name {
+        font-size: 1.2rem;
+    }
+
+    .demoVideo {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .end {
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+
+    .reference {
+        font-size: 0.9rem;
+    }
 }
